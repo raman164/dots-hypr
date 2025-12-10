@@ -46,42 +46,42 @@ A comprehensive dotfiles repository for Arch Linux with Hyprland wayland composi
 This setup includes 15+ custom Waybar themes, each with unique styling and layouts:
 
 <p align="center">
-  <img src="screenshots/waybar-themes/01-bizare-top.png" width="49%" />
-  <img src="screenshots/waybar-themes/02-bizare-left.png" width="49%" />
+  <img src="screenshots/waybar-themes/01-bizare-top-cropped.png" width="49%" />
+  <img src="screenshots/waybar-themes/02-bizare-left-cropped.png" width="49%" />
 </p>
 
 <p align="center">
-  <img src="screenshots/waybar-themes/03-horo.png" width="49%" />
-  <img src="screenshots/waybar-themes/04-ipman.png" width="49%" />
+  <img src="screenshots/waybar-themes/03-horo-cropped.png" width="49%" />
+  <img src="screenshots/waybar-themes/04-ipman-cropped.png" width="49%" />
 </p>
 
 <p align="center">
-  <img src="screenshots/waybar-themes/05-king.png" width="49%" />
-  <img src="screenshots/waybar-themes/06-minimal.png" width="49%" />
+  <img src="screenshots/waybar-themes/05-king-cropped.png" width="49%" />
+  <img src="screenshots/waybar-themes/06-minimal-cropped.png" width="49%" />
 </p>
 
 <p align="center">
-  <img src="screenshots/waybar-themes/07-modern.png" width="49%" />
-  <img src="screenshots/waybar-themes/08-nano.png" width="49%" />
+  <img src="screenshots/waybar-themes/07-modern-cropped.png" width="49%" />
+  <img src="screenshots/waybar-themes/08-nano-cropped.png" width="49%" />
 </p>
 
 <p align="center">
-  <img src="screenshots/waybar-themes/09-nbar-blue.png" width="49%" />
-  <img src="screenshots/waybar-themes/10-nbar-gruv.png" width="49%" />
+  <img src="screenshots/waybar-themes/09-nbar-blue-cropped.png" width="49%" />
+  <img src="screenshots/waybar-themes/10-nbar-gruv-cropped.png" width="49%" />
 </p>
 
 <p align="center">
-  <img src="screenshots/waybar-themes/11-rainbow.png" width="49%" />
-  <img src="screenshots/waybar-themes/12-simple.png" width="49%" />
+  <img src="screenshots/waybar-themes/11-rainbow-cropped.png" width="49%" />
+  <img src="screenshots/waybar-themes/12-simple-cropped.png" width="49%" />
 </p>
 
 <p align="center">
-  <img src="screenshots/waybar-themes/13-soft.png" width="49%" />
-  <img src="screenshots/waybar-themes/14-colorful.png" width="49%" />
+  <img src="screenshots/waybar-themes/13-soft-cropped.png" width="49%" />
+  <img src="screenshots/waybar-themes/14-colorful-cropped.png" width="49%" />
 </p>
 
 <p align="center">
-  <img src="screenshots/waybar-themes/15-design.png" width="100%" />
+  <img src="screenshots/waybar-themes/15-design-cropped.png" width="100%" />
 </p>
 
 **Switch themes easily:** Use `SUPER + S` to open the Waybar theme switcher
