@@ -41,6 +41,51 @@ A comprehensive dotfiles repository for Arch Linux with Hyprland wayland composi
   <img src="screenshots/06-firefox-browser.png" width="49%" />
 </p>
 
+### Waybar Themes Collection
+
+This setup includes 15+ custom Waybar themes, each with unique styling and layouts:
+
+<p align="center">
+  <img src="screenshots/waybar-themes/01-bizare-top.png" width="49%" />
+  <img src="screenshots/waybar-themes/02-bizare-left.png" width="49%" />
+</p>
+
+<p align="center">
+  <img src="screenshots/waybar-themes/03-horo.png" width="49%" />
+  <img src="screenshots/waybar-themes/04-ipman.png" width="49%" />
+</p>
+
+<p align="center">
+  <img src="screenshots/waybar-themes/05-king.png" width="49%" />
+  <img src="screenshots/waybar-themes/06-minimal.png" width="49%" />
+</p>
+
+<p align="center">
+  <img src="screenshots/waybar-themes/07-modern.png" width="49%" />
+  <img src="screenshots/waybar-themes/08-nano.png" width="49%" />
+</p>
+
+<p align="center">
+  <img src="screenshots/waybar-themes/09-nbar-blue.png" width="49%" />
+  <img src="screenshots/waybar-themes/10-nbar-gruv.png" width="49%" />
+</p>
+
+<p align="center">
+  <img src="screenshots/waybar-themes/11-rainbow.png" width="49%" />
+  <img src="screenshots/waybar-themes/12-simple.png" width="49%" />
+</p>
+
+<p align="center">
+  <img src="screenshots/waybar-themes/13-soft.png" width="49%" />
+  <img src="screenshots/waybar-themes/14-colorful.png" width="49%" />
+</p>
+
+<p align="center">
+  <img src="screenshots/waybar-themes/15-design.png" width="100%" />
+</p>
+
+**Switch themes easily:** Use `SUPER + S` to open the Waybar theme switcher
+
 ## Features
 
 - **Hyprland Configuration**: Fully configured Hyprland with custom keybindings, window rules, and animations
@@ -192,12 +237,6 @@ ln -sf ~/dotfiles/.config/* ~/.config/
 # Change default shell
 chsh -s $(which zsh)
 ```
-
-## Key Bindings (Hyprland)
-
-The Hyprland configuration includes many custom keybindings. Here are some of the most important ones:
-
-(You can extract these from your hyprland.conf file and list them here)
 
 ## Post-Installation
 
