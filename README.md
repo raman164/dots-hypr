@@ -57,6 +57,52 @@ A comprehensive dotfiles repository for Arch Linux with Hyprland wayland composi
 - **Status Bar**: Waybar with custom modules
 - **System Monitoring**: btop for beautiful system monitoring
 
+## Keybindings
+
+This setup includes extensive custom keybindings for efficient workflow. Here are the most important ones:
+
+### Essential Shortcuts
+
+| Keybinding | Action |
+|------------|--------|
+| `SUPER + Return` | Open terminal (foot) |
+| `SUPER + Q` | Close active window |
+| `SUPER + B` | Open Firefox |
+| `SUPER + E` | Open file manager (Thunar) |
+| `SUPER + Space` | Open fuzzel launcher |
+| `SUPER + F` | Toggle fullscreen |
+
+### Window Navigation (Vim Keys)
+
+| Keybinding | Action |
+|------------|--------|
+| `SUPER + h/j/k/l` | Move focus left/down/up/right |
+| `SUPER + SHIFT + h/j/k/l` | Move window left/down/up/right |
+
+### Workspaces
+
+| Keybinding | Action |
+|------------|--------|
+| `SUPER + 1-9` | Switch to workspace 1-9 |
+| `SUPER + SHIFT + 1-9` | Move window to workspace 1-9 |
+
+### Screenshots
+
+| Keybinding | Action |
+|------------|--------|
+| `SUPER + ALT + S` | Screenshot entire screen |
+| `SUPER + SHIFT + S` | Screenshot selection |
+
+### Customization
+
+| Keybinding | Action |
+|------------|--------|
+| `SUPER + S` | Waybar theme switcher |
+| `SUPER + R` | Terminal theme switcher |
+| `SUPER + CTRL + W` | Wallpaper selector |
+
+**For complete keybindings list, see [KEYBINDINGS.md](KEYBINDINGS.md)**
+
 ## Directory Structure
 
 ```
