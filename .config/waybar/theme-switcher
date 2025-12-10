@@ -1,0 +1,14 @@
+#!/bin/bash
+
+THEMES_DIR="$HOME/.config/waybar/themes"
+THEME=$(ls "$THEMES_DIR" | wofi --dmenu --prompt "Select Waybar Theme:")
+
+if [ -n "$THEME" ]; then
+  # Symlink the selected theme
+  ln -sf "$THEMES_DIR/$THEME/config" ~/.config/waybar/config
+  ln -sf "$THEMES_DIR/$THEME/style.css" ~/.config/waybar/style.css
+  
+  # Restart Waybar
+  killall waybar
+  waybar &
+fi

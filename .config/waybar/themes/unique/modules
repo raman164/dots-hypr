@@ -1,0 +1,106 @@
+{
+    "hyprland/window": {
+        "max-length": 64,
+        "format": "{}"
+    },
+
+    "network": {
+        "format": "{icon}",
+        "format-icons": [
+            "󰤠", "󰤢", "󰤥", "󰤨" 
+        ],
+        "format-disconnected": "󰤭",
+        "on-click": "~/.config/scripts/wifi-menu",
+        "format-wifi": "{essid} ({signalStrength}%)",
+        "format-ethernet":   "󰤥",
+        "interface": "wlan0", "type": "wifi",
+        "interface": "ens18", "type": "ethernet"
+    },
+
+    "custom/updater":{
+        "format": "  {}",
+        "exec": "~/.config/waybar/themes/unique/checkforupdates",
+        "return-type": "json",
+        "exec-if": "[[ $(checkupdates | wc -l) ]]", "interval": 15, "on-click": "foot -T update yay -Syu || paru -Syu && notify-send 'The system has been updated'", "on-click-right": "~/.config/hypr/scripts/WallpaperSwitch.sh",
+    },
+
+
+    "bluetooth": {
+        "format": "{icon}",
+        "format-icons": "󰂯",
+        "format-connected": "󰂯",
+        "format-disconnected": "󰂲",
+        "format-disabled": "󰂲",
+        "tooltip-format": "Disconnected (on)",
+        "tooltip-format-disabled": "Disconnected (off)",
+        "tooltip-format-connected": "{device_alias} ({device_battery_percentage}%)",
+        "tooltip-format-enumerate-connected": "{device_alias} ({device_battery_percentage}%)",
+        "on-click": "blueman-manager"
+    },
+
+    "pulseaudio": {
+        "format": "{icon}",
+        "format-muted": "󰖁",
+        "format-icons": {
+            "headphones": "",
+            "headset": "󱡏",
+            "default": [
+                "󰝟",
+                "󱄡",
+                "󰖀",
+                "󰕾"
+            ]
+        },
+        "on-click": "pavucontrol",
+        "tooltip-format": "Volume ({volume}%)"
+    },
+
+    "battery": {
+        "format": "{icon}",
+        "format-icons": [
+            "󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"
+        ],
+        "format-charging": "󰂄",
+        "format-full": "󱟢",
+        "format-warning": "󰂃",
+        "tooltip": true,
+        "tooltip-format": "Discharging ({capacity}%)",
+        "tooltip-format-charging": "Charging ({capacity}%)",
+        "tooltip-format-full": "Full ({capacity}%)"
+    },
+
+    "custom/space": {
+        "format": " ",
+        "tooltip": false
+    },
+
+    "clock": {
+        "format": "{:%I:%M %p}",
+        "on-click": "rofi -disable-history -show drun",
+        "tooltip": true,
+        "tooltip-format": "{:%d %B, %Y on a %A}"
+    },
+
+    "tray": {
+        "icon-size": 20,
+        "spacing": 16
+    },
+
+    "custom/power": {
+        "format": "󰐥",
+        "tooltip": true,
+        "tooltip-format": "Power menu (wlogout)",
+        "on-click": "wlogout"
+    },
+
+    "backlight": {
+        "format": "{icon}",
+        "format-icons": ["󰃞", "󰃝", "󰃟", "󰃠"],
+        "interval": 2,
+        "on-click": "hyprsunset -t 3750",
+        "on-scroll-up": "brightnessctl s +5%",
+        "on-scroll-down": "brightnessctl s 5%-",
+        "tooltip": true,
+        "tooltip-format": "Current brightness: {percent}%"
+    }
+}

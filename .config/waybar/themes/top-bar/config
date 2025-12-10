@@ -1,0 +1,92 @@
+{
+    "name": "waybar-bottom",  // Unique identifier
+    "position": "top",
+    "layer": "top",
+    "height": 30,
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["battery", "network", "tray"],
+    
+    "custom/hello": {
+        "format": "Hello Bottom Bar!",
+        "interval": "once"
+    },
+
+
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9"
+        },
+        "active-only": false,
+        "on-click": "activate"
+    },
+
+   "custom/sep": {
+        "format": "│",
+        "tooltip": false
+    },
+
+   "pulseaudio": {
+        "format": "{icon}  {volume}%",
+        "format-muted": "  Muted",
+        "format-icons": {
+            "headphones": "",
+            "handsfree": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", ""]
+        },
+        "scroll-step": 1,
+        "on-click": "pavucontrol"
+    },
+
+    "network": {
+        "format-wifi": "  {essid} ({signalStrength}%)",
+        "format-ethernet": "  {ifname}",
+        "format-disconnected": "  Disconnected",
+        "tooltip-format": "{ifname}: {ipaddr}/{cidr}",
+        "on-click": "nm-connection-editor"
+    },
+
+   "custom/updates": {
+	    "format": "{} {icon}",
+	    "return-type": "json",
+	    "format-icons": {
+		    "has-updates": "󱍷",
+		    "updated": " "
+		    // "updated": "  "
+		    // "updated": "󰴭  "
+	    },
+	    "exec-if": "which waybar-module-pacman-updates",
+	    "exec": "waybar-module-pacman-updates --no-zero-output --interval-seconds 5 --network-interval-seconds 300 --tooltip-align-columns 'Source Code Pro'",
+      "exec-if": "exit 0",
+	    "on-click": "foot -e 'paru'; pkill -SIGRTMIN+8 waybar",
+    },
+
+
+    
+    "clock": {
+        "format": "{:%H:%M}",
+        "tooltip": false
+    },
+    
+    "battery": {
+        "format": "{capacity}% {icon}",
+        "format-charging": "{capacity}%  ",
+        "format-plugged": "{capacity}%  ",
+        "format-alt": "{icon}  {time}",
+        "format-icons": ["", "", "", "", ""],
+        "interval": 1
+    }
+}

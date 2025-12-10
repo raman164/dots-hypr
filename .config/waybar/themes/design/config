@@ -1,0 +1,121 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 20,
+    "spacing": 4,
+    "margin-top": 4,
+    "margin-bottom": 2,
+    "margin-left": 4,
+    "margin-right": 4,
+    "modules-left": ["hyprland/workspaces", "custom/sep", "cpu", "memory", "custom/updates"],
+    // "modules-center": ["custom/updates", "custom/sep", "custom/weather"],
+    "modules-right": ["pulseaudio", "network", "battery", "clock", "tray"],
+
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "",
+            "7": "",
+            "8": "",
+            "9": ""
+        },
+        "active-only": false,
+        "on-click": "activate"
+    },
+
+    "custom/sep": {
+        "format": "│",
+        "tooltip": false
+    },
+
+    "cpu": {
+        "format": "  {usage}%",
+        "interval": 1,
+        "tooltip": false
+    },
+
+    "memory": {
+        "format": "  {}%",
+        "interval": 1,
+        "tooltip": false
+    },
+
+    "clock": {
+        "format": "  {:%H:%M}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "interval": 1
+    },
+
+    "pulseaudio": {
+        "format": "{icon}  {volume}%",
+        "format-muted": "  Muted",
+        "format-icons": {
+            "headphones": "",
+            "handsfree": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", ""]
+        },
+        "scroll-step": 1,
+        "on-click": "pavucontrol"
+    },
+
+    "network": {
+        "format-wifi": "  {essid} ({signalStrength}%)",
+        "format-ethernet": "  {ifname}",
+        "format-disconnected": "  Disconnected",
+        "tooltip-format": "{ifname}: {ipaddr}/{cidr}",
+        "on-click": "nm-connection-editor"
+    },
+
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon}  {capacity}%",
+        "format-charging": "  {capacity}%",
+        "format-plugged": "  {capacity}%",
+        "format-alt": "{icon}  {time}",
+        "format-icons": ["", "", "", "", ""],
+        "interval": 1
+    },
+
+    "tray": {
+        "icon-size": 18,
+        "spacing": 8
+    },
+   "custom/weather": {
+    "format": "{}",
+    "format-alt": "{alt}: {}",
+    "format-alt-click": "click-right",
+    "interval": 600,
+    "tooltip-format": "Richmond Hill",
+    "exec": "curl -s 'https://wttr.in/Richmond+Hill?format=1' | tr -s ' '",
+    "exec-if": "bash -c 'sleep 10; ping wttr.in -c1'"
+    },
+
+    "custom/updates": {
+	    "format": "{} {icon}",
+	    "return-type": "json",
+	    "format-icons": {
+		    "has-updates": "󱍷",
+		    "updated": " "
+		    // "updated": "  "
+		    // "updated": "󰴭  "
+	    },
+	    "exec-if": "which waybar-module-pacman-updates",
+	    "exec": "waybar-module-pacman-updates --no-zero-output --interval-seconds 5 --network-interval-seconds 300 --tooltip-align-columns 'Source Code Pro'",
+      "exec-if": "exit 0",
+	    "on-click": "foot -e 'paru'; pkill -SIGRTMIN+8 waybar",
+    }
+
+}

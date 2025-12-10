@@ -1,0 +1,4 @@
+[flavor]
+dark = 'catppuccin-mocha'
+light = 'catppuccin-mocha'
+use = 'catppuccin-mocha'

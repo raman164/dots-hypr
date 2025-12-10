@@ -1,0 +1,140 @@
+/* @import "mocha.css"; */
+@define-color rosewater #f5e0dc;
+@define-color flamingo #f2cdcd;
+@define-color pink #f5c2e7;
+@define-color mauve #cba6f7;
+@define-color red #f38ba8;
+@define-color maroon #eba0ac;
+@define-color peach #fab387;
+@define-color yellow #f9e2af;
+@define-color green #a6e3a1;
+@define-color teal #94e2d5;
+@define-color sky #89dceb;
+@define-color sapphire #74c7ec;
+@define-color blue #89b4fa;
+@define-color lavender #b4befe;
+@define-color text #cdd6f4;
+@define-color subtext1 #bac2de;
+@define-color subtext0 #a6adc8;
+@define-color overlay2 #9399b2;
+@define-color overlay1 #7f849c;
+@define-color overlay0 #6c7086;
+@define-color surface2 #585b70;
+@define-color surface1 #45475a;
+@define-color surface0 #313244;
+@define-color base #1e1e2e;
+@define-color mantle #181825;
+@define-color crust #11111b;
+
+* {
+    font-family: "Meslo Nerd Font";
+    font-size: 14px;
+    min-height: 0;
+    font-weight: bold;
+}
+
+window#waybar {
+    background: transparent;
+    background-color: @base;
+    color: @overlay0;
+    transition-property: background-color;
+    transition-duration: 0.1s;
+}
+
+#window {
+    margin: 5px;
+    padding-left: 10px;
+    padding-right: 0px;
+    color: #c4a6a6;
+}
+
+button {
+    box-shadow: inset 0 -3px transparent;
+    border: none;
+    border-radius: 0;
+}
+
+button:hover {
+    background: inherit;
+    color: @pink;
+}
+
+#workspaces button {
+    padding: 3px 1px;
+    padding-left: 8px;
+}
+
+#workspaces button.focused {
+    color: @teal;
+}
+
+#workspaces button.active {
+    color: @blue;
+}
+
+#workspaces button.urgent {
+    background-color: @maroon;
+}
+
+#tray {
+    margin: 5px;
+}
+
+#pulseaudio,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#wireplumber,
+#mode,
+#scratchpad,
+#clock {
+    color: @blue;
+    margin: 15px;
+}
+
+#clock.date {
+    color: @mauve;
+}
+
+#pulseaudio {
+    color: @blue;
+    margin: 5px;
+    padding-right: 8px;
+}
+
+#network {
+    color: @yellow;
+    margin: 5px;
+}
+
+#battery {
+    color: @green;
+    margin: 5px;
+}
+
+#custom-notification {
+    font-family: "Meslo Nerd Font";
+    color: @blue;
+    margin: 10px;
+}
+#custom-pacman {
+    color: @pink;
+    margin: 5px;
+}
+
+#custom-spotify {
+    color: @green;
+    margin: 5px;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 5px;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 5px;
+}

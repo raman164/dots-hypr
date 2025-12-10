@@ -1,0 +1,37 @@
+# Ruff configuration example
+# Copy this file to your Python project root as "ruff.toml" or "pyproject.toml"
+# to customize which rules ruff checks
+
+[lint]
+# Enable common rule sets
+select = [
+    "E",  # pycodestyle errors
+    "F",  # pyflakes
+    "W",  # pycodestyle warnings
+]
+
+# Ignore specific rules that are often annoying
+ignore = [
+    "E501",  # line too long (let black handle line length)
+    "E402",  # module level import not at top of file
+    "F401",  # imported but unused (can be useful for __init__.py)
+    "W191",  # indentation contains tabs
+]
+
+# Set line length to match black
+line-length = 88
+
+# Exclude common directories
+exclude = [
+    ".git",
+    "__pycache__",
+    ".venv",
+    "venv",
+    "build",
+    "dist",
+]
+
+[format]
+# Use tabs or spaces (keep consistent with black)
+indent-style = "space"
+quote-style = "double"

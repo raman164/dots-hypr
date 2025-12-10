@@ -1,0 +1,40 @@
+* {
+	font-family: JetBrainsMonoNl NF;
+	/* font-family: Iosevka Nerd Font; */
+	font-size: 15px;
+  }
+
+  window#waybar {
+  	/* background: rgba(24,26,27,0.8); */
+  	/* background: rgba(44,61,99,0.8); */
+  	background: rgba(24,47,83,0.8);
+	border: 2px;
+	border-style: solid;
+	/* border-color: rgba(89, 89, 89, 0.67); */
+	border-color: rgba(137, 180, 250, 0.46);
+	border-radius: 5px;
+}
+
+.modules-right {
+	padding-right: 5px;
+
+	
+}
+
+.module-left {
+	padding-left: 5px;
+}
+#window {
+  padding-left: 15px;
+}
+#cpu {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+#memory {
+	padding-right: 1em;
+}
+#disk {
+	padding-right: 1em;
+}
+

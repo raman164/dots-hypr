@@ -1,0 +1,169 @@
+/* @import "color.css"; */
+/* Generic bar properties */
+
+@define-color base00 #181818;
+@define-color base01 #282828;
+@define-color base02 #383838;
+@define-color base03 #585858;
+@define-color base04 #b8b8b8;
+@define-color base05 #d8d8d8;
+@define-color base06 #e8e8e8;
+@define-color base07 #f8f8f8;
+@define-color base08 #ab4642;
+@define-color base09 #dc9656;
+@define-color base0A #f7ca88;
+@define-color base0B #a1b56c;
+@define-color base0C #86c1b9;
+@define-color base0D #7cafc2;
+@define-color base0E #ba8baf;
+@define-color base0F #a16946;
+@define-color base0G #89b4fa;
+
+
+
+* {
+    border:         none;
+    border-radius:  0px;
+    font-family:    "Iosevka Nerd Font";
+    font-size:      14px;
+    min-height:     0;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+window#waybar {
+    /* background: @base01; */
+    background: #1e1e2e;
+    opacity: .75;
+    border-bottom: 2px solid @base00;
+    border-top: 2px solid @base00;
+    color: @base04;
+}
+window#waybar.hidden {
+    opacity: 0.25;
+}
+/* General formatting */
+#workspaces, #pulseaudio, #pulseaudio#microphone, #clock, #mode, #window, #idle-inhibitor, #custom-clock, #custom-date, #mpd, #custom-keyboard, #custom-battery, #custom-speaker, #custom-microphone, #custom-backlight, #custom-memory, #custom-cpu, #custom-fan, #custom-coretemp, #custom-gputemp, #custom-rootfs, #custom-homefs, #custom-calendar, #custom-todo, #custom-gmail, #custom-rss, #custom-network, #custom-bandwidth, #custom-update, #custom-uptime, #custom-kernel, #tray {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 2px;
+    padding-right: 2px;
+    /* color: @base04; */
+    color: #89b4fa;
+    background: transparent;
+    border-radius: 0px;
+    margin-top: 0px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-bottom: 0px;
+    /* border-bottom: 2px solid @base09; */
+}
+/* MPD module spacing */
+#custom-mpd-song, #custom-mpd-prev, #custom-mpd-rewind, #custom-mpd-fastforward, #custom-mpd-next, #custom-mpd-random, #custom-mpd-repeat, #custom-mpd-single {
+    margin-right: 0px;
+}
+#custom-mpd-prev, #custom-mpd-rewind, #custom-mpd-fastforward, #custom-mpd-next, #custom-mpd-random, #custom-mpd-repeat, #custom-mpd-single, #custom-mpd-consume {
+    margin-left: 0px;
+}
+#custom-mpd-prev, #custom-mpd-rewind, #custom-mpd-fastforward, #custom-mpd-next, #custom-mpd-random, #custom-mpd-repeat, #custom-mpd-single, #custom-mpd-consume {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+/* Custom colors for attention */
+*.mute {color: @base03;}
+*.paused {color: @base03;}
+*.urgent {color: @base09;}
+#idle_inhibitor.activated {color: @base0F;}
+/* Workspaces */
+#workspaces {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+#workspaces button {
+    background: transparent;
+    font-weight: bold;
+    /* color: @base04; */
+    color: #89b4fa;
+    /* border-bottom: 2px solid @base04; */
+}
+#workspaces button.persistant {border-bottom: @base03; color: @base03;}
+#workspaces button.active {border-bottom: 2px solid @base0G;}
+#workspaces button.visible {background: rgba(1, 1, 1, .1);}
+#workspaces button.focused {border-bottom: 2px solid @base0C; color: @base0C;
+    background: rgba(1, 1, 1, .1);}
+#workspaces button.urgent {border-bottom: 2px solid @base09; color: @base09;}
+/* Border lines: FOREGROUND */
+#custom-tray {
+    border-top: 2px solid @base04;
+}
+/* Border lines: RED */
+#custom-battery.low {
+    border-bottom: 2px solid @base08;
+}
+#custom-coretemp, #custom-gputemp, #custom-todo {
+    border-top: 2px solid @base08;
+}
+/* Border lines: ORANGE */
+#custom-battery.warn {
+    border-bottom: 2px solid @base04;
+}
+#custom-fan, #custom-rss {
+    border-top: 2px solid @base09;
+}
+/* Border lines: YELLOW */
+#custom-battery.ok {
+    border-bottom: 2px solid @base04;
+}
+#custom-cpu, #custom-gmail {
+    border-top: 2px solid @base0A;
+}
+/* Border lines: GREEN */
+#custom-battery.good {
+    border-bottom: 2px solid @base04;
+}
+#custom-memory, #custom-network, #custom-bandwidth {
+    border-top: 2px solid @base0B;
+}
+/* Border lines: CYAN */
+#mode, #window, #idle-inhibitor, #custom-keyboard {
+    border-bottom: 2px solid @base0G;
+}
+#custom-backlight, #custom-update {
+    border-top: 2px solid @base0C;
+}
+/* Border lines: INDIGO */
+#custom-clock, #custom-date {
+    border-bottom: 2px solid @base0D;
+}
+#custom-microphone, #custom-uptime {
+    border-top: 2px solid @base0D;
+}
+/* Border lines: VIOLET */
+#mpd {
+    border-bottom: 2px solid @base0E;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+#custom-speaker, #custom-kernel {
+    border-top: 2px solid @base0E;
+}
+/* Border lines: BROWN */
+#idle_inhibitor {
+    border-bottom: 2px solid @base0F;
+}
+#custom-rootfs, #custom-homefs, #custom-calendar {
+    border-top: 2px solid @base0F;
+}
+
+#pulseaudio {
+    border-bottom: 2px solid @base0G;
+}
+
+#clock {
+    border-bottom: 2px solid @base0G;
+    padding-right: 8px;
+}

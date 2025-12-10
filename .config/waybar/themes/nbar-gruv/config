@@ -1,0 +1,160 @@
+[
+// Feb 19, 2025
+// Redoing rice again lmao
+
+//--------------------------------------------
+// main monitor bar options
+//--------------------------------------------
+
+{
+	"layer": "top",
+	"position": "top",
+	"height": 40,
+	"spacing": 0,
+	"margin-top": 6,
+	"margin-left": 7,
+	"margin-right":7,
+	"margin-bottom": 0,
+
+//--------------------------------------------
+// module layout
+//--------------------------------------------
+	"modules-left":
+	[
+		"custom/spotify",
+    "hyprland/window"
+	],
+	"modules-center":
+	[
+		"cpu",
+		"memory",
+		"disk",
+		"disk#nvme",
+		"disk#ssd",
+    "network#up",
+    "network#down"
+	],
+	"modules-right":
+	[
+		"clock"
+	],
+//--------------------------------------------
+// module configuration(in order)
+//--------------------------------------------
+	"custom/spotify":
+	{
+		"exec":"/home/rbedit7/.config/waybar/themes/nbar-gruv/scripts/mediaplayer.py --player spotify",
+		"format":"<span color='#689d6a'> 󰝚</span> {}",
+		"return-type": "json"
+	},
+
+	"cpu":
+	{
+		"format": " <span color='#cc241d'> </span>{usage}%",
+		"tooltip": false
+	},
+
+	"memory":
+	{
+		"format": "<span color='#d79921'></span> {}%"
+	},
+
+	"disk":
+	{
+		"path": "/",
+		"interval": 30,
+		"format": "<span color='#98971a'>󰋊</span> {free}",
+		"unit": "GB"
+	},
+
+	"disk#nvme":
+	{
+		"path": "/nvme",
+		"interval": 30,
+		"format": "<span color='#458588'>󰋊</span> {free}",
+		"unit": "GB"
+	},
+
+	"disk#ssd":
+	{
+		"path": "/ssd",
+		"interval": 30,
+		"format": "<span color='#b16286'>󰋊</span> {free}",
+		"unit": "GB"
+	},
+	
+	"clock":
+	{
+		"format":"{:%B %d, %Y - %I:%M} <span color='#689d6a'> </span>",
+		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><big>{calendar}</big></tt>"
+	},
+	"network#down":
+	{	
+		"interval": 1,
+		"format": "<span color='#cc241d'></span> {bandwidthDownBytes}"
+	},
+
+	"network#up":
+	{	
+		"interval": 1,
+		"format":"<span color='#458588'></span> {bandwidthUpBytes} "
+	}
+},
+//--------------------------------------------
+// other monitor bar options
+//--------------------------------------------
+{
+	"height": 26,
+	"output": "DP-4",
+	"spacing": 20,
+	"margin-top":5,
+	"margin-left":30,
+	"margin-right":30,
+	"margin-bottom":0,
+
+//--------------------------------------------
+// module layout
+//--------------------------------------------
+	"modules-left":
+	[
+		"clock"
+	],
+	"modules-center":
+	[
+		"tray"
+	],
+	"modules-right":
+	[
+		"network#down",
+		"network#up"
+	],
+//--------------------------------------------
+// module configuration(in order)
+//--------------------------------------------
+	"clock":
+	{
+		"format":" {:%I:%M}"
+	},
+	"network#down":
+	{	
+		"interval": 1,
+		"interface": "wlo1",
+		"format-wifi": "<span color='#cc241d'></span> {bandwidthDownBytes}"
+	},
+
+	"network#up":
+	{	
+		"interval": 1,
+		"interface": "wlo1",
+		"format-wifi":"<span color='#458588'></span> {bandwidthUpBytes} "
+	},
+  "hyprland/window": {
+    "format": "( {class} )",
+  }
+
+}
+
+
+
+//end
+]

@@ -1,0 +1,27 @@
+{
+    "include": "~/.config/waybar/themes/unique/modules",
+    "layer": "top",
+    "position": "top",
+    "height": 36,
+    "width": 2550,
+    "margin": "8 0 0 0",
+    "spacing": 4,
+    "modules-left": [
+        "clock",
+        "custom/space",
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+        "hyprland/window"
+    ],
+    "modules-right": [
+        "tray",
+        "group/system",
+        "custom/space",
+        "custom/power"
+    ],
+    "group/system": {
+        "orientation": "horizontal",
+        "modules": [ "custom/updater", "network", "bluetooth", "pulseaudio", "battery" ]
+    },
+}

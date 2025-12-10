@@ -1,0 +1,122 @@
+/* @import url("./colors.css"); */
+
+@define-color bg         #1c1c1c;
+@define-color bg-darker  #121212;
+@define-color fg         #eeeeee;
+@define-color fg-darker  #656565;
+@define-color inactive   #454545;
+@define-color red        #865054;
+@define-color green      #5f7a5f;
+@define-color blue       #5f7a8c;
+@define-color cyan       #6a8b8b;
+@define-color yellow     #a4965f;
+@define-color lime       #7a9e34;
+
+* {
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 13.5pt;
+}
+
+window#waybar {
+  color: @fg;
+  border-radius: 7px;
+  padding-left: 2px;
+  padding-right: 2px;
+  background-color: transparent;
+}
+
+#system {
+  background: @bg;
+  border-radius: 7px;
+  border: 2px solid #454545;
+}
+
+#workspaces {
+  background: @bg;
+  border: 2px solid #454545;
+  border-radius: 7px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+#workspaces button {
+  min-width: 14px;
+  padding: 0 7px;
+  color: @inactive;
+  transition: color 0.3s ease;
+}
+
+#workspaces button.active {
+  color: @lime;
+}
+
+#workspaces button:hover {
+  color: @fg-darker;
+  box-shadow: inherit;
+  text-shadow: inherit;
+  background: transparent;
+}
+
+#window {
+  background-color: #161616;
+}
+
+#tray {
+  padding-right: 12px;
+}
+
+#network {
+  padding-left: 12px;
+  font-size: 15.5pt;
+  padding-right: 24px;
+  color: @cyan;
+}
+
+#custom-updater.updated {
+  padding-left: 10px;
+  font-size: 11.5pt;
+  padding-right: 5px;
+  color: @blue;
+}
+
+#custom-updater.pending {
+  padding-left: 10px;
+  font-size: 11.5pt;
+  padding-right: 5px;
+  color: #9d8888;
+}
+
+#bluetooth {
+  font-size: 15.25pt;
+  padding-right: 16px;
+  color: @blue;
+}
+
+#pulseaudio {
+  font-size: 15.5pt;
+  padding-right: 22px;
+  color: @yellow;
+}
+
+#clock {
+  background: @bg;
+  border: 2px solid #454545;
+  border-radius: 7px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+#custom-power {
+  background-color: @red;
+  padding-right: 14px;
+  padding-left: 12px;
+  font-size: 22px;
+  border-radius: 7px;
+  color: @bg;
+}
+
+#battery {
+  padding-right: 12.5px;
+  font-size: 15.5pt;
+  color: @green;
+}

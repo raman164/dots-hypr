@@ -1,0 +1,60 @@
+* {
+    border: none;
+    font-family: "Fira Code", "Iosevka Nerd Font";
+    font-size: 14px;
+    min-height: 0;
+}
+
+#waybar-bottom {
+    background: linear-gradient(90deg, #1a1c24 0%, #2a2f3d 100%);
+    color: #c0caf5;
+    border-radius: 10px 10px 0 0;
+    margin: 0 10px;
+}
+
+#custom-hello {
+    color: #7aa2f7;
+    padding: 0 15px;
+    margin: 2px 0;
+}
+
+#tray {
+    padding: 0 12px;
+    margin: 0 4px;
+
+    /* border-left: 1px solid #3b4261; */
+}
+
+#clock {
+    font-weight: bold;
+    color: #9ece6a;
+}
+
+#battery {
+    color: #e0af68;
+    padding-right: 15px;
+}
+
+#workspaces button {
+  color: #939498; /* Workspace text color */
+}
+#workspaces button.active {
+  color: #f4f4f4;
+  border-radius: 7px;
+}
+
+#workspaces button.focused {
+  background: #81a1c1; /* Focused workspace background */
+  color: #2e3440; /* Focused workspace text */
+  border-radius: 12px;
+}
+
+#workspaces button.urgent {
+  background: #bf616a; /* Urgent workspace background */
+  color: #2e3440; /* Urgent workspace text */
+  border-radius: 12px;
+}
+
+#network {
+  color: #7aa2f7;
+}

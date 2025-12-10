@@ -1,0 +1,23 @@
+#!/bin/sh
+
+# Check for updates and count them
+wget -q --spider https://www.google.com
+ 
+# Check if there was an error fetching updates
+if [ $? -ne 0 ]; then
+    echo "ERROR!"
+# Otherwise, count the number of updates
+else
+    updates=$(checkupdates |  wc -l)
+
+    # Check if there are no updates
+    if [[ $updates -eq 0 ]]; then
+      echo '{"text":"Fully Updated", "class":"updated"}'
+    # Check if there is one update
+    elif [[ $updates -eq 1 ]]; then
+      echo "1 Update"
+    # Otherwise, display the number of updates
+    else
+      echo "{\"text\":\"$updates Updates\", \"class\":\"pending\"}"
+    fi
+fi

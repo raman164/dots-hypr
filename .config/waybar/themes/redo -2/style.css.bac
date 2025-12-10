@@ -1,0 +1,185 @@
+/* @import "gruvbox.css"; */
+@define-color background #1e1e2e;
+@define-color foreground #f0f1f5;
+@define-color lighter #0f1417;
+@define-color white-custom #c2c4c3;
+@define-color gentoo #d17dc6;
+@define-color datet #7d69d1;
+@define-color timet #eda57b;
+@define-color charging #a3c725;
+@define-color discharging #e62315;
+@define-color full #5dbd35;
+@define-color red #e53935;
+@define-color pink #d81b60;
+@define-color purple #9F7DCF;
+@define-color deep-purple #5e35b1;
+@define-color indigo #3949ab;
+@define-color blue #5895DC;
+@define-color light-blue #039be5;
+@define-color cyan #00acc1;
+@define-color teal #00897b;
+@define-color green #43a047;
+@define-color light-green #7cb342;
+@define-color lime #c0ca33;
+@define-color yellow #E0A445;
+@define-color amber #DFA445;
+@define-color orange #F57C00;
+@define-color deep-orange #f4511e;
+@define-color brown #6d4c41;
+@define-color gray #757575;
+@define-color blue-gray #546e7a;
+@define-color nix-color #92d4c9;
+
+* {
+    font-family: "Iosevka Nerd Font";
+    font-size: 16px;
+    min-height: 0;
+    font-weight: bold;
+}
+
+window#waybar {
+    background: transparent;
+    background-color: @background;
+    color: @foreground;
+    transition-property: background-color;
+    transition-duration: 0.1s;
+}
+
+#window {
+    margin: 2;
+    padding-left: 8;
+    padding-right: 8;
+}
+
+button {
+    box-shadow: inset 0 -3px transparent;
+    border: none;
+    border-radius: 0;
+}
+
+button:hover {
+    background: inherit;
+    border-top: 2px solid @hover;
+}
+
+
+#workspaces button {
+  border-radius: 15px;
+  margin-right: 10px;
+  padding-top: 4px;
+  padding-bottom: 2px;
+  padding-right: 10px;
+  font-weight: bolder;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  background-color: @lightred;
+  color: @lightbg;
+}
+
+#workspaces button.active {
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 3px;
+  background-color: #689d6a;
+  color: @lightbg;
+}
+
+
+#pulseaudio,
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#wireplumber,
+#network,
+#tray,
+#mode,
+#bluetooth,
+#scratchpad {
+    margin: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+#clock {
+    color: @maroon;
+    border-bottom: 2px solid @maroon;
+}
+
+#clock.date {
+    color: @mauve;
+    border-bottom: 2px solid @mauve;
+}
+
+#pulseaudio {
+    color: @blue;
+    border-bottom: 2px solid @blue;
+}
+
+#network {
+    color: @yellow;
+    border-bottom: 2px solid @yellow;
+}
+
+#bluetooth {
+  color: @yellow;
+  border-bottom: 2px solid @yellow;
+}
+
+#idle_inhibitor {
+    margin-right: 12px;
+    color: #7cb342;
+}
+
+#idle_inhibitor.activated {
+    color: @red;
+}
+
+#battery.charging,
+#battery.plugged {
+    color: @green;
+    border-bottom: 2px solid @green;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left>widget:first-child>#workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right>widget:last-child>#workspaces {
+    margin-right: 0;
+}
+
+#custom-vpn {
+    color: @lavender;
+    border-radius: 15px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+#custom-power {
+    color: #282828;
+    background-color: #689d6a;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 14px;
+}
+
+#custom-notification {
+  background: @lightbg;
+  margin: 2px;
+  padding: 2px;
+  padding-left: 7px;
+  padding-right: 10px;
+
+  margin-top: 7px;
+  margin-bottom: 7px;
+  border-radius: 5px;
+}
