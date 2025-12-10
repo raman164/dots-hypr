@@ -19,8 +19,27 @@ A comprehensive dotfiles repository for Arch Linux with Hyprland wayland composi
 
 ## Screenshots
 
-Screenshots coming soon! This repository includes scripts to easily capture screenshots:
-- `retake-screenshots.sh` - Automated screenshot capture script
+### Desktop & Waybar
+![Desktop](screenshots/01-desktop-clean.png)
+![Waybar Desktop](screenshots/08-waybar-desktop.png)
+
+### System Monitoring & Info
+<p align="center">
+  <img src="screenshots/02-btop-system-monitor.png" width="49%" />
+  <img src="screenshots/03-fastfetch-neofetch.png" width="49%" />
+</p>
+
+### Applications
+<p align="center">
+  <img src="screenshots/04-neovim-editor.png" width="49%" />
+  <img src="screenshots/05-yazi-file-manager.png" width="49%" />
+</p>
+
+### File Management & Browsing
+<p align="center">
+  <img src="screenshots/07-thunar-file-manager.png" width="49%" />
+  <img src="screenshots/06-firefox-browser.png" width="49%" />
+</p>
 
 ## Features
 
