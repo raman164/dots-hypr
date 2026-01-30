@@ -1,0 +1,18 @@
+# Kanagawa dunst theme
+[urgency_low]
+    background = "#1f1f28"
+    foreground = "#dcd7ba"
+    frame_color = "#54546d"
+    timeout = 5
+
+[urgency_normal]
+    background = "#1f1f28"
+    foreground = "#dcd7ba"
+    frame_color = "#7e9cd8"
+    timeout = 10
+
+[urgency_critical]
+    background = "#1f1f28"
+    foreground = "#c34043"
+    frame_color = "#c34043"
+    timeout = 0

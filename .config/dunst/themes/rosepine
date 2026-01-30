@@ -1,0 +1,18 @@
+# Rose Pine dunst theme
+[urgency_low]
+    background = "#191724"
+    foreground = "#e0def4"
+    frame_color = "#6e6a86"
+    timeout = 5
+
+[urgency_normal]
+    background = "#191724"
+    foreground = "#e0def4"
+    frame_color = "#c4a7e7"
+    timeout = 10
+
+[urgency_critical]
+    background = "#191724"
+    foreground = "#eb6f92"
+    frame_color = "#eb6f92"
+    timeout = 0

@@ -1,0 +1,18 @@
+# Default - Colors matching dots-hypr repo
+[urgency_low]
+    background = "#1c1c1c"
+    foreground = "#eeeeee"
+    frame_color = "#454545"
+    timeout = 5
+
+[urgency_normal]
+    background = "#1c1c1c"
+    foreground = "#eeeeee"
+    frame_color = "#5f7a8c"
+    timeout = 10
+
+[urgency_critical]
+    background = "#1c1c1c"
+    foreground = "#eeeeee"
+    frame_color = "#865054"
+    timeout = 0

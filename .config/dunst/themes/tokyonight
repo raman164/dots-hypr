@@ -1,0 +1,18 @@
+# Tokyo Night dunst theme
+[urgency_low]
+    background = "#1a1b26"
+    foreground = "#a9b1d6"
+    frame_color = "#414868"
+    timeout = 5
+
+[urgency_normal]
+    background = "#1a1b26"
+    foreground = "#a9b1d6"
+    frame_color = "#7aa2f7"
+    timeout = 10
+
+[urgency_critical]
+    background = "#1a1b26"
+    foreground = "#f7768e"
+    frame_color = "#f7768e"
+    timeout = 0

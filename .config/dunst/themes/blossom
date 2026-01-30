@@ -1,0 +1,21 @@
+# Blossom Theme - Warm earth tones
+# From rayes0/dotfiles
+
+[global]
+frame_color = "#9c7b9c"
+highlight = "#9c7b9c"
+
+[urgency_low]
+background = "#e6dad6"
+foreground = "#6c605a"
+frame_color = "#dad3d0"
+
+[urgency_normal]
+background = "#e6dad6"
+foreground = "#6c605a"
+frame_color = "#9c7b9c"
+
+[urgency_critical]
+background = "#ce9c85"
+foreground = "#6c605a"
+frame_color = "#ce9c85"

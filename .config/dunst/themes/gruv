@@ -1,0 +1,29 @@
+[urgency_low]
+    background = "#282828"
+    foreground = "#ebdbb2"
+    highlight = "#b8bb26"
+    frame_color = "#665c54"
+    timeout = 5
+
+[urgency_normal]
+    background = "#282828"
+    foreground = "#ebdbb2"
+    highlight = "#b8bb26"
+    frame_color = "#665c54"
+    timeout = 5
+
+[urgency_critical]
+    background = "#282828"
+    foreground = "#ebdbb2"
+    frame_color = "#fb4934"
+    timeout = 1000
+
+[volume]
+    appname = "Volume"
+    highlight = "#8ec07c"
+
+[backlight]
+    appname = "Backlight"
+    highlight = "#fe8019"
+
+# vim: ft=cfg

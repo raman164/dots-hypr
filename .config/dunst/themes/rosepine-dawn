@@ -1,0 +1,18 @@
+# Rose Pine Dawn - Light dunst theme
+[urgency_low]
+    background = "#faf4ed"
+    foreground = "#575279"
+    frame_color = "#cecacd"
+    timeout = 5
+
+[urgency_normal]
+    background = "#faf4ed"
+    foreground = "#575279"
+    frame_color = "#907aa9"
+    timeout = 10
+
+[urgency_critical]
+    background = "#faf4ed"
+    foreground = "#b4637a"
+    frame_color = "#b4637a"
+    timeout = 0

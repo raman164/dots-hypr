@@ -1,0 +1,21 @@
+# Blossom Dark Theme - Warm muted earth tones
+# From rayes0/dotfiles
+
+[global]
+frame_color = "#937f74"
+highlight = "#937f74"
+
+[urgency_low]
+background = "#2a2a2a"
+foreground = "#bebebe"
+frame_color = "#3a3a3a"
+
+[urgency_normal]
+background = "#2a2a2a"
+foreground = "#bebebe"
+frame_color = "#937f74"
+
+[urgency_critical]
+background = "#637a8a"
+foreground = "#bebebe"
+frame_color = "#637a8a"
