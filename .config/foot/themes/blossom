@@ -1,0 +1,28 @@
+# Blossom Theme - Warm earth tones
+# From rayes0/dotfiles
+
+[colors]
+alpha=1.0
+cursor=ede6e3 937f74
+foreground=6c605a
+background=ede6e3
+
+# Normal colors
+regular0=ede6e3
+regular1=ce9c85
+regular2=839773
+regular3=a09c80
+regular4=8f8678
+regular5=9c7b9c
+regular6=75998e
+regular7=685c56
+
+# Bright colors
+bright0=dad3d0
+bright1=ce9c85
+bright2=839773
+bright3=a09c80
+bright4=8f8678
+bright5=9c7b9c
+bright6=75998e
+bright7=938680

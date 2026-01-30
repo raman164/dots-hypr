@@ -1,0 +1,12 @@
+/* Kanagawa - Japanese-inspired theme from Hokusai's wave painting */
+@define-color bg         #1f1f28;
+@define-color bg-darker  #16161d;
+@define-color fg         #dcd7ba;
+@define-color fg-darker  #727169;
+@define-color inactive   #54546d;
+@define-color red        #c34043;
+@define-color green      #76946a;
+@define-color blue       #7e9cd8;
+@define-color cyan       #6a9589;
+@define-color yellow     #c0a36e;
+@define-color lime       #98bb6c;

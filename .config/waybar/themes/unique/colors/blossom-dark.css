@@ -1,0 +1,20 @@
+/* Blossom Dark Theme - Warm muted earth tones */
+/* From rayes0/dotfiles */
+
+@define-color bg         #2a2a2a;
+@define-color bg-darker  #1a1a1a;
+@define-color fg         #bebebe;
+@define-color fg-darker  #8a8a8a;
+@define-color inactive   #3a3a3a;
+@define-color red        #637a8a;
+@define-color green      #aa8f7c;
+@define-color blue       #637a8a;
+@define-color cyan       #9c7b9c;
+@define-color yellow     #8b8f7e;
+@define-color lime       #aa8f7c;
+@define-color magenta    #877979;
+@define-color brown      #6c605a;
+@define-color beige      #e6dad6;
+@define-color olive      #a09c80;
+@define-color accent     #937f74;
+@define-color magenta    #9c7b9c;

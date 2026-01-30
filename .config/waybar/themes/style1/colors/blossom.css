@@ -1,0 +1,15 @@
+/* Blossom Theme - Warm earth tones */
+/* From rayes0/dotfiles */
+
+@define-color bg         #ede6e3;
+@define-color bg-darker  #e6dad6;
+@define-color fg         #6c605a;
+@define-color fg-darker  #938680;
+@define-color inactive   #dad3d0;
+@define-color red        #ce9c85;
+@define-color green      #839773;
+@define-color blue       #8f8678;
+@define-color cyan       #75998e;
+@define-color yellow     #a09c80;
+@define-color lime       #839773;
+@define-color magenta    #9c7b9c;

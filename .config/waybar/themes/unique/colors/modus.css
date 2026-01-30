@@ -1,0 +1,12 @@
+/* Modus Operandi - Maximum contrast black on pure white */
+@define-color bg         #ffffff;
+@define-color bg-darker  #f2f2f2;
+@define-color fg         #000000;
+@define-color fg-darker  #505050;
+@define-color inactive   #9f9f9f;
+@define-color red        #a60000;
+@define-color green      #006800;
+@define-color blue       #0031a9;
+@define-color cyan       #005e8b;
+@define-color yellow     #6f5500;
+@define-color lime       #006800;

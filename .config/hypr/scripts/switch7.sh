@@ -61,17 +61,14 @@ change_logseq_theme() {
 # Function to change the Neovim theme
 change_neovim_theme() {
     local theme="$1"
-    if [ -f "$NVIM_CONFIG" ]; then
-        sed -i "s/theme = \"[^\"]*\"/theme = \"$theme\"/" "$NVIM_CONFIG"
-        echo "Changed Neovim theme to $theme"
-        
-        # Reload highlights
-        nvim --headless -c "lua require('base46').load_all_highlights()" -c q
-        
-        echo "Reloaded all highlights"
-    else
-        echo "Error: Neovim config file $NVIM_CONFIG not found"
-    fi
+    local theme_file="$HOME/.config/nvim/current_theme"
+
+    # Write the theme name to the current_theme file
+    echo "$theme" > "$theme_file"
+    echo "Changed Neovim theme to $theme"
+
+    # Note: Neovim will pick up the new theme on next restart
+    # or you can manually run :lua vim.cmd("colorscheme <name>")
 }
 
 # Function to change the Cava theme
@@ -124,8 +121,14 @@ change_all_themes() {
 
 
 case "$1" in
+    -def|--default)
+        change_all_themes "Catppuccin" "default" "default" "default" "default" "Default"
+        ;;
+    -no|--nightowl)
+        change_all_themes "Dracula Gemini" "nightowl" "nightowl" "nightowl" "nightowl" "NightOwl"
+        ;;
     -d|--dracula)
-        change_all_themes "Dracula Gemini" "dracula" "dracula" "chadracula" "dracula" "Dracula"
+        change_all_themes "Dracula Gemini" "dracula" "dracula" "dracula" "dracula" "Dracula"
         ;;
     -g|--gruv)
         change_all_themes "Obsidian gruvbox" "gruv" "gruv" "gruvbox" "gruv" "Gruv"
@@ -139,8 +142,53 @@ case "$1" in
     -b|--everblush)
         change_all_themes "Everblush" "everblush" "everblush" "everblush" "everblush" "Everblush"
         ;;
+    -gl|--gruvbox-light)
+        change_all_themes "Gruvbox Light" "gruvbox-light" "gruvbox-light" "gruvbox-light" "gruvbox-light" "GruvboxLight"
+        ;;
+    -sl|--solarized-light)
+        change_all_themes "Solarized" "solarized-light" "solarized-light" "solarized-light" "solarized-light" "SolarizedLight"
+        ;;
+    -z|--zenbones)
+        change_all_themes "Minimal" "zenbones" "zenbones" "zenbones" "zenbones" "Zenbones"
+        ;;
+    -al|--alabaster)
+        change_all_themes "Minimal" "alabaster" "alabaster" "alabaster" "alabaster" "Alabaster"
+        ;;
+    -p|--papercolor)
+        change_all_themes "Minimal" "papercolor" "papercolor" "papercolor" "papercolor" "PaperColor"
+        ;;
+    -m|--modus)
+        change_all_themes "Minimal" "modus" "modus" "modus" "modus" "Modus"
+        ;;
+    -tn|--tokyonight)
+        change_all_themes "Tokyo Night" "tokyonight" "tokyonight" "tokyonight" "tokyonight" "TokyoNight"
+        ;;
+    -rp|--rosepine)
+        change_all_themes "Rose Pine" "rosepine" "rosepine" "rosepine" "rosepine" "RosePine"
+        ;;
+    -rpd|--rosepine-dawn)
+        change_all_themes "Rose Pine Dawn" "rosepine-dawn" "rosepine-dawn" "rosepine-dawn" "rosepine-dawn" "RosePineDawn"
+        ;;
+    -k|--kanagawa)
+        change_all_themes "Minimal" "kanagawa" "kanagawa" "kanagawa" "kanagawa" "Kanagawa"
+        ;;
+    -bl|--blossom)
+        change_all_themes "Minimal" "blossom" "blossom" "blossom" "blossom" "Blossom"
+        ;;
+    -bld|--blossom-dark)
+        change_all_themes "Minimal" "blossom-dark" "blossom-dark" "blossom-dark" "blossom-dark" "BlossomDark"
+        ;;
+    -cl|--catppuccin-latte)
+        change_all_themes "Catppuccin" "catppuccin-latte" "catppuccin-latte" "catppuccin-latte" "catppuccin-latte" "CatppuccinLatte"
+        ;;
+    -sel|--selenized-light)
+        change_all_themes "Solarized" "selenized-light" "selenized-light" "selenized-light" "selenized-light" "SelenizedLight"
+        ;;
+    -hf|--huggingface)
+        change_all_themes "Minimal" "huggingface" "huggingface" "huggingface" "huggingface" "HuggingFace"
+        ;;
     *)
-        echo "Usage: $0 [-d|--dracula] [-g|--gruv] [-n|--nord] [-e|--everforest] [-b|--everblush]"
+        echo "Usage: $0 [theme-flag]"
         exit 1
         ;;
 esac

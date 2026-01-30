@@ -70,6 +70,12 @@ change_all_themes() {
 }
 
 case "$1" in
+    -def|--default)
+        change_all_themes "Papirus-Dark" "Papirus-Dark" "Default" "Default" "Default"
+        ;;
+    -no|--nightowl)
+        change_all_themes "Tela-circle-dracula" "Tela-circle-dracula" "NightOwl" "NightOwl" "NightOwl"
+        ;;
     -d|--dracula)
         change_all_themes "Tela-circle-dracula" "Tela-circle-dracula" "Dracula" "Dracula" "Dracula"
         ;;
@@ -85,8 +91,53 @@ case "$1" in
     -b|--everblush)
         change_all_themes "BeautyDream" "BeautyDream" "Everblush" "Everblush" "Everblush"
         ;;
+    -gl|--gruvbox-light)
+        change_all_themes "Gruvbox-Plus-Light" "Gruvbox-Plus-Light" "GruvboxLight" "GruvboxLight" "GruvboxLight"
+        ;;
+    -sl|--solarized-light)
+        change_all_themes "Papirus-Light" "Papirus-Light" "SolarizedLight" "SolarizedLight" "SolarizedLight"
+        ;;
+    -z|--zenbones)
+        change_all_themes "Papirus-Light" "Papirus-Light" "Zenbones" "Zenbones" "Zenbones"
+        ;;
+    -al|--alabaster)
+        change_all_themes "Papirus-Light" "Papirus-Light" "Alabaster" "Alabaster" "Alabaster"
+        ;;
+    -p|--papercolor)
+        change_all_themes "Papirus-Light" "Papirus-Light" "PaperColor" "PaperColor" "PaperColor"
+        ;;
+    -m|--modus)
+        change_all_themes "Papirus-Light" "Papirus-Light" "Modus" "Modus" "Modus"
+        ;;
+    -tn|--tokyonight)
+        change_all_themes "Papirus-Dark" "Papirus-Dark" "TokyoNight" "TokyoNight" "TokyoNight"
+        ;;
+    -rp|--rosepine)
+        change_all_themes "Papirus-Dark" "Papirus-Dark" "RosePine" "RosePine" "RosePine"
+        ;;
+    -rpd|--rosepine-dawn)
+        change_all_themes "Papirus-Light" "Papirus-Light" "RosePineDawn" "RosePineDawn" "RosePineDawn"
+        ;;
+    -k|--kanagawa)
+        change_all_themes "Papirus-Dark" "Papirus-Dark" "Kanagawa" "Kanagawa" "Kanagawa"
+        ;;
+    -bl|--blossom)
+        change_all_themes "Papirus-Light" "Papirus-Light" "Blossom" "Blossom" "Blossom"
+        ;;
+    -bld|--blossom-dark)
+        change_all_themes "Papirus-Dark" "Papirus-Dark" "BlossomDark" "BlossomDark" "BlossomDark"
+        ;;
+    -cl|--catppuccin-latte)
+        change_all_themes "Papirus-Light" "Papirus-Light" "CatppuccinLatte" "CatppuccinLatte" "CatppuccinLatte"
+        ;;
+    -sel|--selenized-light)
+        change_all_themes "Papirus-Light" "Papirus-Light" "SelenizedLight" "SelenizedLight" "SelenizedLight"
+        ;;
+    -hf|--huggingface)
+        change_all_themes "Papirus-Dark" "Papirus-Dark" "HuggingFace" "HuggingFace" "HuggingFace"
+        ;;
     *)
-        echo "Usage: $0 [-d|--dracula] [-g|--gruv] [-n|--nord] [-e|--everforest] [-b|--everblush]" 
+        echo "Usage: $0 [theme-flag]"
         exit 1
         ;;
 esac

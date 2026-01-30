@@ -1,0 +1,12 @@
+/* Alabaster - Clean white/gray minimal with vivid accents */
+@define-color bg         #f7f7f7;
+@define-color bg-darker  #ebebeb;
+@define-color fg         #434343;
+@define-color fg-darker  #6e6e6e;
+@define-color inactive   #a0a0a0;
+@define-color red        #d2322d;
+@define-color green      #6a9955;
+@define-color blue       #0070c1;
+@define-color cyan       #007acc;
+@define-color yellow     #e67e22;
+@define-color lime       #6a9955;

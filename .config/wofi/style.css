@@ -1,0 +1,75 @@
+@import "/home/rbedit7/.config/wofi/colors/theme.css";
+
+* {
+    all: unset;
+    font-family: "Iosevka Nerd Font";
+    -GtkWidget-focus-line-width: 0;
+    -GtkWidget-focus-padding: 0;
+}
+
+window {
+    font-size: 14px;
+    border-radius: 5px;
+    border: 2px solid @border;
+    background: @bg;
+}
+
+image {
+    margin-left: .25em;
+    margin-right: .25em;
+    background: transparent;
+}
+
+#input {
+    background: @bg-dark;
+    border-radius: 5px;
+    border: 2px solid @accent;
+    color: @fg;
+    padding: 8px;
+    margin: 5px;
+}
+
+#inner-box {
+    margin: 5px;
+    background: @bg;
+}
+
+#outer-box {
+    margin: 5px;
+    background: @bg;
+}
+
+#scroll {
+    margin: 0px;
+    background: transparent;
+}
+
+#text {
+    margin: 5px;
+    color: @fg;
+    background: transparent;
+}
+
+#entry {
+    background: @bg;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 2px 5px;
+}
+
+#entry:selected {
+    background: @accent;
+    border-radius: 5px;
+}
+
+#entry:selected #text {
+    color: @fg;
+}
+
+#entry:selected image {
+    background: transparent;
+}
+
+#entry:hover {
+    background: @selected;
+}

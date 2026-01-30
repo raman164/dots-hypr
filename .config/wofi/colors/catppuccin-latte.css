@@ -1,0 +1,9 @@
+/* Catppuccin Latte Theme */
+
+@define-color bg         #eff1f5;
+@define-color bg-dark    #e6e9ef;
+@define-color fg         #4c4f69;
+@define-color accent     #7287fd;
+@define-color border     #ccd0da;
+@define-color selected   #dce0e8;
+@define-color urgent     #d20f39;

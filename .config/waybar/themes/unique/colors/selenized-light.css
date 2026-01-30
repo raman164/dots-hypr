@@ -1,0 +1,15 @@
+/* Selenized Light Theme */
+/* Solarized redesigned with better readability */
+
+@define-color bg         #fbf3db;
+@define-color bg-darker  #ece3cc;
+@define-color fg         #53676d;
+@define-color fg-darker  #3a4d53;
+@define-color inactive   #d5cdb6;
+@define-color red        #d2212d;
+@define-color green      #489100;
+@define-color blue       #0072d4;
+@define-color cyan       #009c8f;
+@define-color yellow     #ad8900;
+@define-color lime       #489100;
+@define-color magenta    #ca4898;

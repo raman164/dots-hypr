@@ -1,0 +1,15 @@
+/* Hugging Face Dark Theme */
+/* Inspired by huggingface.co */
+
+@define-color bg         #0f1117;
+@define-color bg-darker  #1a1a2e;
+@define-color fg         #e8e8e8;
+@define-color fg-darker  #a0a0a0;
+@define-color inactive   #2a2a3e;
+@define-color red        #ff6b6b;
+@define-color green      #4ade80;
+@define-color blue       #60a5fa;
+@define-color cyan       #22d3ee;
+@define-color yellow     #ffd21e;
+@define-color lime       #4ade80;
+@define-color magenta    #c084fc;

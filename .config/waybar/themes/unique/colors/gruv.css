@@ -1,0 +1,12 @@
+/* Gruvbox Dark - Warm retro orange/yellow */
+@define-color bg         #282828;
+@define-color bg-darker  #1d2021;
+@define-color fg         #ebdbb2;
+@define-color fg-darker  #a89984;
+@define-color inactive   #665c54;
+@define-color red        #fb4934;
+@define-color green      #b8bb26;
+@define-color blue       #83a598;
+@define-color cyan       #8ec07c;
+@define-color yellow     #fe8019;
+@define-color lime       #b8bb26;

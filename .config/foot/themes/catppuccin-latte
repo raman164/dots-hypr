@@ -1,0 +1,27 @@
+# Catppuccin Latte Theme
+
+[colors]
+alpha=1.0
+foreground=4c4f69
+background=eff1f5
+cursor=eff1f5 7287fd
+
+# Normal colors
+regular0=5c5f77
+regular1=d20f39
+regular2=40a02b
+regular3=df8e1d
+regular4=1e66f5
+regular5=8839ef
+regular6=179299
+regular7=acb0be
+
+# Bright colors
+bright0=6c6f85
+bright1=d20f39
+bright2=40a02b
+bright3=df8e1d
+bright4=1e66f5
+bright5=8839ef
+bright6=179299
+bright7=bcc0cc

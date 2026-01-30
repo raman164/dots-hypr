@@ -1,0 +1,28 @@
+# Hugging Face Dark Theme
+# Inspired by huggingface.co
+
+[colors]
+alpha=0.6
+foreground=e8e8e8
+background=0f1117
+cursor=0f1117 ffd21e
+
+# Normal colors
+regular0=1a1a2e
+regular1=ff6b6b
+regular2=4ade80
+regular3=ffd21e
+regular4=60a5fa
+regular5=c084fc
+regular6=22d3ee
+regular7=e8e8e8
+
+# Bright colors
+bright0=2a2a3e
+bright1=ff8585
+bright2=86efac
+bright3=ffe45e
+bright4=93c5fd
+bright5=d8b4fe
+bright6=67e8f9
+bright7=ffffff

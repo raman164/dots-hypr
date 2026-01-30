@@ -1,0 +1,12 @@
+/* Solarized Light - Yellowish cream with blue/cyan accents */
+@define-color bg         #fdf6e3;
+@define-color bg-darker  #eee8d5;
+@define-color fg         #657b83;
+@define-color fg-darker  #586e75;
+@define-color inactive   #93a1a1;
+@define-color red        #dc322f;
+@define-color green      #859900;
+@define-color blue       #268bd2;
+@define-color cyan       #2aa198;
+@define-color yellow     #b58900;
+@define-color lime       #859900;

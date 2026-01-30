@@ -1,0 +1,10 @@
+mode=drun
+allow_images=true
+image_size=30
+width=450
+height=450
+prompt=Search...
+insensitive=true
+hide_scroll=true
+no_actions=true
+gtk_dark=false

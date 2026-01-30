@@ -1,0 +1,14 @@
+/* Catppuccin Latte Theme */
+
+@define-color bg         #eff1f5;
+@define-color bg-darker  #e6e9ef;
+@define-color fg         #4c4f69;
+@define-color fg-darker  #5c5f77;
+@define-color inactive   #ccd0da;
+@define-color red        #d20f39;
+@define-color green      #40a02b;
+@define-color blue       #1e66f5;
+@define-color cyan       #179299;
+@define-color yellow     #df8e1d;
+@define-color lime       #40a02b;
+@define-color magenta    #8839ef;

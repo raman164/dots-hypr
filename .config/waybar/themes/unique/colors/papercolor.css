@@ -1,0 +1,12 @@
+/* PaperColor - Bright white with vibrant terminal colors */
+@define-color bg         #eeeeee;
+@define-color bg-darker  #e4e4e4;
+@define-color fg         #444444;
+@define-color fg-darker  #5f8700;
+@define-color inactive   #bcbcbc;
+@define-color red        #d70000;
+@define-color green      #008700;
+@define-color blue       #005faf;
+@define-color cyan       #0087af;
+@define-color yellow     #af8700;
+@define-color lime       #5faf00;

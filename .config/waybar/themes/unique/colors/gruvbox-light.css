@@ -1,0 +1,12 @@
+/* Gruvbox Light - Warm cream with orange/brown accents */
+@define-color bg         #fbf1c7;
+@define-color bg-darker  #f2e5bc;
+@define-color fg         #3c3836;
+@define-color fg-darker  #504945;
+@define-color inactive   #bdae93;
+@define-color red        #9d0006;
+@define-color green      #79740e;
+@define-color blue       #076678;
+@define-color cyan       #427b58;
+@define-color yellow     #b57614;
+@define-color lime       #79740e;

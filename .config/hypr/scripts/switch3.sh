@@ -5,11 +5,21 @@ SWWW_SCRIPT="${XDG_CONFIG_HOME:-$HOME/.config}/hypr/scripts/swwwallpaper.sh"
 
 # Define wallpaper directories for each theme
 WALLPAPER_DIR="${XDG_CONFIG_HOME:-$HOME/.config}/swww"
+DEFAULT_DIR="$WALLPAPER_DIR/default"
 DRACULA_DIR="$WALLPAPER_DIR/dracula"
 GRUV_DIR="$WALLPAPER_DIR/gruv"
 NORD_DIR="$WALLPAPER_DIR/nord"
 EVERFOREST_DIR="$WALLPAPER_DIR/everforest"
 EVERBLUSH_DIR="$WALLPAPER_DIR/everblush"
+GRUVBOX_LIGHT_DIR="$WALLPAPER_DIR/gruvbox-light"
+SOLARIZED_LIGHT_DIR="$WALLPAPER_DIR/solarized-light"
+ZENBONES_DIR="$WALLPAPER_DIR/zenbones"
+ALABASTER_DIR="$WALLPAPER_DIR/alabaster"
+PAPERCOLOR_DIR="$WALLPAPER_DIR/papercolor"
+MODUS_DIR="$WALLPAPER_DIR/modus"
+TOKYONIGHT_DIR="$WALLPAPER_DIR/tokyonight"
+ROSEPINE_DIR="$WALLPAPER_DIR/rosepine"
+KANAGAWA_DIR="$WALLPAPER_DIR/kanagawa"
 
 # Function to change wallpaper directory and set a wallpaper
 change_wallpaper_theme() {
@@ -34,6 +44,12 @@ change_wallpaper_theme() {
  
 
 case "$1" in
+    -def|--default)
+        change_wallpaper_theme "$DEFAULT_DIR"
+        ;;
+    -no|--nightowl)
+        change_wallpaper_theme "$WALLPAPER_DIR/nightowl"
+        ;;
     -d|--dracula)
         change_wallpaper_theme "$DRACULA_DIR"
         ;;
@@ -49,8 +65,53 @@ case "$1" in
     -b|--everblush)
         change_wallpaper_theme "$EVERBLUSH_DIR"
         ;;
+    -gl|--gruvbox-light)
+        change_wallpaper_theme "$GRUVBOX_LIGHT_DIR"
+        ;;
+    -sl|--solarized-light)
+        change_wallpaper_theme "$SOLARIZED_LIGHT_DIR"
+        ;;
+    -z|--zenbones)
+        change_wallpaper_theme "$ZENBONES_DIR"
+        ;;
+    -al|--alabaster)
+        change_wallpaper_theme "$ALABASTER_DIR"
+        ;;
+    -p|--papercolor)
+        change_wallpaper_theme "$PAPERCOLOR_DIR"
+        ;;
+    -m|--modus)
+        change_wallpaper_theme "$MODUS_DIR"
+        ;;
+    -tn|--tokyonight)
+        change_wallpaper_theme "$TOKYONIGHT_DIR"
+        ;;
+    -rp|--rosepine)
+        change_wallpaper_theme "$ROSEPINE_DIR"
+        ;;
+    -rpd|--rosepine-dawn)
+        change_wallpaper_theme "$WALLPAPER_DIR/rosepine-dawn"
+        ;;
+    -k|--kanagawa)
+        change_wallpaper_theme "$KANAGAWA_DIR"
+        ;;
+    -bl|--blossom)
+        change_wallpaper_theme "$WALLPAPER_DIR/blossom"
+        ;;
+    -bld|--blossom-dark)
+        change_wallpaper_theme "$WALLPAPER_DIR/blossom-dark"
+        ;;
+    -cl|--catppuccin-latte)
+        change_wallpaper_theme "$WALLPAPER_DIR/catppuccin-latte"
+        ;;
+    -sel|--selenized-light)
+        change_wallpaper_theme "$WALLPAPER_DIR/selenized-light"
+        ;;
+    -hf|--huggingface)
+        change_wallpaper_theme "$WALLPAPER_DIR/huggingface"
+        ;;
     *)
-        echo "Usage: $0 [-d|--dracula] [-g|--gruv] [-n|--nord] [-e|--everforest][-b|--everblush]"
+        echo "Usage: $0 [theme-flag]"
         exit 1
         ;;
 esac

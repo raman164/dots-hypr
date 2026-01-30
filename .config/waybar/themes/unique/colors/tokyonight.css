@@ -1,0 +1,12 @@
+/* Tokyo Night - Clean dark theme with purple/blue tones */
+@define-color bg         #1a1b26;
+@define-color bg-darker  #16161e;
+@define-color fg         #a9b1d6;
+@define-color fg-darker  #565f89;
+@define-color inactive   #414868;
+@define-color red        #f7768e;
+@define-color green      #9ece6a;
+@define-color blue       #7aa2f7;
+@define-color cyan       #7dcfff;
+@define-color yellow     #e0af68;
+@define-color lime       #9ece6a;

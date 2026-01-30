@@ -1,0 +1,10 @@
+/* Blossom Dark Theme - Warm muted earth tones */
+/* From rayes0/dotfiles */
+
+@define-color bg         #2a2a2a;
+@define-color bg-dark    #1a1a1a;
+@define-color fg         #bebebe;
+@define-color accent     #3a3a3a;
+@define-color border     #3a3a3a;
+@define-color selected   #3a3a3a;
+@define-color urgent     #637a8a;

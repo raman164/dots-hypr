@@ -1,16 +1,5 @@
-/* @import url("./colors.css"); */
-
-@define-color bg         #1c1c1c;
-@define-color bg-darker  #121212;
-@define-color fg         #eeeeee;
-@define-color fg-darker  #656565;
-@define-color inactive   #454545;
-@define-color red        #865054;
-@define-color green      #5f7a5f;
-@define-color blue       #5f7a8c;
-@define-color cyan       #6a8b8b;
-@define-color yellow     #a4965f;
-@define-color lime       #7a9e34;
+/* Colors imported from theme file */
+@import "themes/unique/colors/theme.css";
 
 * {
   font-family: "JetBrainsMono Nerd Font";
@@ -28,12 +17,12 @@ window#waybar {
 #system {
   background: @bg;
   border-radius: 7px;
-  border: 2px solid #454545;
+  border: 2px solid @inactive;
 }
 
 #workspaces {
   background: @bg;
-  border: 2px solid #454545;
+  border: 2px solid @inactive;
   border-radius: 7px;
   padding-left: 3px;
   padding-right: 3px;
@@ -58,7 +47,7 @@ window#waybar {
 }
 
 #window {
-  background-color: #161616;
+  background-color: transparent;
 }
 
 #tray {
@@ -100,7 +89,7 @@ window#waybar {
 
 #clock {
   background: @bg;
-  border: 2px solid #454545;
+  border: 2px solid @inactive;
   border-radius: 7px;
   padding-right: 10px;
   padding-left: 10px;
@@ -119,4 +108,19 @@ window#waybar {
   padding-right: 12.5px;
   font-size: 15.5pt;
   color: @green;
+}
+
+/* Styling the main tooltip box under the custom updater */
+tooltip {
+  background: @bg; /* Match your background */
+  border-radius: 8px;
+  border: 0.5px solid @inactive;
+}
+
+/* Adjusting the text inside the tooltip under the custom updater */
+tooltip label {
+  font-size: 13px; /* Make text smaller */
+  color: @fg;
+  padding: 2px 6px; /* Shrink the box by reducing internal space */
+  margin: 0px; /* Remove extra outer spacing */
 }

@@ -1,0 +1,25 @@
+# Kanagawa - Inspired by Hokusai's famous wave painting
+[colors]
+alpha=0.6
+foreground=dcd7ba
+background=1f1f28
+
+# Normal colors
+regular0=16161d
+regular1=c34043
+regular2=76946a
+regular3=c0a36e
+regular4=7e9cd8
+regular5=957fb8
+regular6=6a9589
+regular7=c8c093
+
+# Bright colors
+bright0=54546d
+bright1=e82424
+bright2=98bb6c
+bright3=ff9e3b
+bright4=7fb4ca
+bright5=938aa9
+bright6=7aa89f
+bright7=dcd7ba

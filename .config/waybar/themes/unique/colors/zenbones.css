@@ -1,0 +1,12 @@
+/* Zenbones - Warm bone/sepia paper, very soft muted tones */
+@define-color bg         #f0edec;
+@define-color bg-darker  #e8e4e0;
+@define-color fg         #2c363c;
+@define-color fg-darker  #4f5e68;
+@define-color inactive   #b4bdc3;
+@define-color red        #a8334c;
+@define-color green      #4f6c31;
+@define-color blue       #286486;
+@define-color cyan       #3b8992;
+@define-color yellow     #944927;
+@define-color lime       #4f6c31;

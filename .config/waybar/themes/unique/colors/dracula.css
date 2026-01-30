@@ -1,0 +1,12 @@
+/* Dracula - Purple/Pink on dark purple-gray */
+@define-color bg         #282a36;
+@define-color bg-darker  #1e1f29;
+@define-color fg         #f8f8f2;
+@define-color fg-darker  #6272a4;
+@define-color inactive   #44475a;
+@define-color red        #ff5555;
+@define-color green      #50fa7b;
+@define-color blue       #bd93f9;
+@define-color cyan       #8be9fd;
+@define-color yellow     #f1fa8c;
+@define-color lime       #50fa7b;

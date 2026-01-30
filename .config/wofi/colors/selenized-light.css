@@ -1,0 +1,9 @@
+/* Selenized Light Theme */
+
+@define-color bg         #fbf3db;
+@define-color bg-dark    #ece3cc;
+@define-color fg         #53676d;
+@define-color accent     #ece3cc;
+@define-color border     #d5cdb6;
+@define-color selected   #cce5ff;
+@define-color urgent     #d2212d;

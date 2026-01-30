@@ -1,0 +1,9 @@
+/* Hugging Face Dark Theme */
+
+@define-color bg         #0f1117;
+@define-color bg-dark    #1a1a2e;
+@define-color fg         #e8e8e8;
+@define-color accent     #ffd21e;
+@define-color border     #2a2a3e;
+@define-color selected   #1a1a2e;
+@define-color urgent     #ff6b6b;
